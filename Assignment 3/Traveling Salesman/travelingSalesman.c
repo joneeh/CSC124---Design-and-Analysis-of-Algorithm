@@ -53,7 +53,16 @@ int main(void)
     int a[] = {0, 1, 2, 3};
     permute(a, 0, 3);
 
-    printf("Traveling Salesman Implementation\n");
+    printf("Traveling Salesman Implementation - Using Nearest Neighbor Algorithm\n");
     printf("CSC124 - Design and Analysis of Algorithm\n\n");
-    printf("Minimum Cost: %d\n", cost);
+
+    printf("Matrix representation of graph:\n\n");
+    for (i=0; i<4; i++)
+     {
+        for(j=0; j<4; j++)
+            {printf("%4d", graph[i][j]);}
+            printf("\n");
+     }
+
+    printf("\nMinimum Cost: %d\n", cost);
 }
